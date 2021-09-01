@@ -1,1 +1,1 @@
-# Numerical-Differentiation-Methods
+# Numerical Differentiation Methods
