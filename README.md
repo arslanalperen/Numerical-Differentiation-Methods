@@ -153,7 +153,7 @@ When looking at the points where convergences end, it can be seen that the curve
 
 It was also mentioned in the preliminary section of the report on the three-point midpoint method. When we look at the Midpoint method, it is seen that it cannot calculate derivatives in left and right end points. There is also a separate method for these points. This method is called the Three-point endpoint method. Using this method, the derivative can also be calculated at the end point points. To see the difference, we will first calculate it by including the end points. Later, we will not include end points using only the midpoint method. Finally, we will compare these results according to their convergence.  
 
-**<h5>Three-Point Midpoint Formula</h5>**  
+**<h4>Three-Point Midpoint Formula</h4>**  
 
 The midpoint formula will be used to calculate the derivative of intermediate values. Three-Point Midpoint Formula can be used for taking derivative of  x_0 value:
 
@@ -167,5 +167,118 @@ Derivative will be taken for both Endpoints. Therefore, a more accurate result i
 
 If the data group to be calculated with 75 ms ∆t value is calculated,  
 
-![18](/images/18.png)  
+![18](/images/19.png)  
 
+these values are obtained(Figure 18).
+
+If the data group to be calculated with 50 ms ∆t value is calculated,  
+
+![19](/images/20.png)  
+
+these values are obtained(Figure 19).
+
+Values were calculated for 25 and 10 ms, but they were not added to avoid extending the report unnecessarily.
+
+To see the difference better, the values obtained for all ∆t values can be plotted on a graph.  
+
+![20](/images/21.png)  
+
+If the time-current derivative graph is drawn according to each dt value, figure 20 will be obtained. As mentioned in the previous pages of the report, it is seen that the line follows a more parabolic path with the decrease in the ∆t value.
+
+When looking at the points where convergences end, it can be seen that the curve with the lower ∆t value converges better(Figure 21).  
+
+![21](/images/22.png)  
+
+If the derivative data used with 75 ms ∆t value is replaced in the formula to find the ε(t) value  
+
+![22](/images/23.png)  
+
+these values are obtained(Figure 22).
+
+If the derivative data used with 50 ms ∆t value is replaced in the formula to find the ε(t) value  
+
+![23](/images/24.png)  
+
+these values are obtained(Figure 23).
+
+Values were calculated for 25 and 10 ms, but they were not added to avoid extending the report unnecessarily.
+
+To see the difference better, the values obtained for all ∆t values can be plotted on a graph. At this point, it will go linear at a correct point that is expected to be parabolic due to the inclusion of the end points. Because the method used to calculate end points is different from the midpoint method.  
+
+![24](/images/25.png)  
+
+As mentioned in the previous pages of the report, it is seen that the line follows a more parabolic path with the decrease in the ∆t value.
+
+When looking at the points where convergences end, it can be seen that the curve with the lower ∆t value converges better(Figure 25). It even caught the correct exact value where ∆t is 10 ms.  
+
+![25](/images/26.png)  
+
+**<h4>Three-Point Midpoint Formula without Endpoints</h4>**  
+
+The midpoint formula will be used to calculate the derivative of intermediate values. Three-Point Midpoint Formula can be used for taking derivative of  x_0 value:
+
+f^' (x_0 )=  1/2h[f(x_0+h)-f(x_0-h)]
+
+End point formula will not be used.
+
+If the data group to be calculated with 75 ms ∆t value is calculated,  
+
+![26](/images/27.png)  
+
+these values are obtained(Figure 26).
+
+If the data group to be calculated with 50 ms ∆t value is calculated,  
+
+![27](/images/28.png)  
+
+these values are obtained(Figure 27).
+
+Values were calculated for 25 and 10 ms, but they were not added to avoid extending the report unnecessarily.
+
+To see the difference better, the values obtained for all ∆t values can be plotted on a graph(Figure 28).  
+
+![28](/images/29.png)  
+
+When looking at the points where convergences end, it can be seen that the curve with the lower ∆t value converges better(Figure 29).  
+
+![29](/images/30.png)  
+
+If the derivative data used with 75 ms ∆t value is replaced in the formula to find the ε(t) value  
+
+![30](/images/31.png)  
+
+these values are obtained(Figure 30).
+
+If the derivative data used with 50 ms ∆t value is replaced in the formula to find the ε(t) value  
+
+![31](/images/32.png)  
+
+these values are obtained(Figure 31).
+
+Values were calculated for 25 and 10 ms, but they were not added to avoid extending the report unnecessarily.
+
+To see the difference better, the values obtained for all ∆t values can be plotted on a graph. At this point, since the endpoints are not included in the derivatives for this method and only the midpoint formula is used, there will not be instantaneous linearity in the ε(t) values as in the case where the endpoints are included, and the lines will follow a parabolic path.  
+
+![32](/images/33.png)  
+
+As mentioned in the previous pages of the report, it is seen that the line follows a more parabolic path with the decrease in the ∆t value.
+
+When looking at the points where convergences end, it can be seen that the curve with the lower ∆t value converges better(Figure 33). It even caught the correct exact value where ∆t is 10 ms.  
+
+![33](/images/34.png)  
+
+As can be seen, both methods were applied. It was expected to give a more accurate result when the Three-Point Midpoint method was added to the Endpoints. But it is seen that the same values are obtained in the resulting graphics. With regard to obtaining such a result, it can be commented that adding endpoints to the Three-Point Midpoint method may not affect the convergence, although it may not affect the convergence, under normal conditions the method should meet the expectation, but the difference cannot be seen on this example or the method that should be applied cannot be applied properly.  
+
+**<h1>Errors and Final Remarks</h1>**  
+
+The norm of a matrix is a scalar that gives some measure of the magnitude of the elements of the matrix. This Matlab function can be used for error calculation.  
+
+![34](/images/35.png)  
+
+When each graph is examined, it can be clearly seen that it approaches the number 12 for ε(t) value. Therefore, it can be said that the theoretical value of ε(t) in the circuit is 12. E value will be assumed to be 12 while calculating the error.
+
+It was frequently mentioned in the previous pages of the report that the data group with a lower ∆t value would converge better. This can be seen when looking at the error rates. When looking at the error rates on a method basis, first let's compare Forward and Backward difference methods. It was written that these methods were similar, only the convergence directions would be similar, and their convergence was expected to be the same. Such an interpretation can be made when considering the formulas used in the methods. However, when looking at the error rates, it can be seen that the Backward-difference method gives a slightly less erroneous result compared to the Forward-difference method.
+
+For the Midpoint method, the cases of placing or not putting endpoints were interpreted on the graph on the previous pages of the report. When viewed on the graph, it was seen that it converged in the same way and it was said that the expectation was not met. However, when looking at the error rates, it can be said that adding endpoints to the calculations gives a clearly better result than if they were not added. In this case, it could be said when looking at the error rates that the expectations were met.
+
+In general, it can be said that the three-Point Midpoint method, which includes the endpoints, has the least error rate, that is, the method that gives the most accurate results when all 4 methods are compared according to the error rates.  
