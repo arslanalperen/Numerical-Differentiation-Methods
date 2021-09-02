@@ -150,3 +150,22 @@ At this point, these values are expected to converge towards a point. As mention
 When looking at the points where convergences end, it can be seen that the curve with the lower ∆t value converges better(Figure 17).  
 
 **<h3>Three-Point Midpoint Formula</h3>**  
+
+It was also mentioned in the preliminary section of the report on the three-point midpoint method. When we look at the Midpoint method, it is seen that it cannot calculate derivatives in left and right end points. There is also a separate method for these points. This method is called the Three-point endpoint method. Using this method, the derivative can also be calculated at the end point points. To see the difference, we will first calculate it by including the end points. Later, we will not include end points using only the midpoint method. Finally, we will compare these results according to their convergence.  
+
+**<h5>Three-Point Midpoint Formula</h5>**  
+
+The midpoint formula will be used to calculate the derivative of intermediate values. Three-Point Midpoint Formula can be used for taking derivative of  x_0 value:
+
+f^' (x_0 )=  1/2h[f(x_0+h)-f(x_0-h)]
+
+End point formula will be used for end points. Three-Point Endpoint Formula can be used for taking derivative of  x_0 value:
+
+f^' (x_0 )=  1/2h[-3f(x_0 )+4f(x_0+h)-f(x_0+2h)]
+
+Derivative will be taken for both Endpoints. Therefore, a more accurate result is expected to be obtained compared to the forward and backward methods. Because the derivative could not be taken for the right endpoint in the forward-difference method and for the left endpoint in the backward-difference method.
+
+If the data group to be calculated with 75 ms ∆t value is calculated,  
+
+![18](/images/18.png)  
+
