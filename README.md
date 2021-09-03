@@ -52,12 +52,12 @@ It is requested to use 75 ms as the ∆t value for the data in the file named Cu
 
 ![3](/images/3.png)  
 
-derivative current values are obtained by using the forward-differences method(Figure 2).
+derivative current values are obtained by using the forward-differences method(Figure 3).
 It is requested to use 50 ms as the ∆t value for the data in the file named Current2.dat. For these data, for each time value except the right end point,  
 
 ![4](/images/4.png)  
 
-derivative current values are obtained by using the forward-differences method(Figure 3).
+derivative current values are obtained by using the forward-differences method(Figure 4).
 Values were calculated for 25 and 10 ms, but they were not added to avoid extending the report unnecessarily.
 
 
@@ -67,9 +67,9 @@ If the time-current derivative graph calculated for each ∆t value is drawn,
 
 ![5](/images/5.png)  
 
-it can be seen that the expected output is received(Figure 4).
+it can be seen that the expected output is received(Figure 5).
 
-When looking at the points where convergences end, it can be seen that the curve with the lower dt value converges better(Figure 5).  
+When looking at the points where convergences end, it can be seen that the curve with the lower dt value converges better(Figure 6).  
 
 ![6](/images/6.png)  
 
@@ -79,13 +79,13 @@ If the derivative data used with 75 ms ∆t value is replaced in the formula to 
 
 ![7](/images/7.png)  
 
-these values are obtained(Figure 6).
+these values are obtained(Figure 7).
 
 If the derivative data used with 50 ms ∆t value is replaced in the formula to find the ε(t) value  
 
 ![8](/images/8.png)  
 
-these values are obtained(Figure 7).
+these values are obtained(Figure 8).
 Values were calculated for 25 and 10 ms, but they were not added to avoid extending the report unnecessarily.
 
 To see the difference better, the values obtained for all ∆t values can be plotted on a graph.
@@ -94,7 +94,7 @@ At this point, these values are expected to converge towards a point. As mention
 
 ![9](/images/9.png)  
 
-It can be seen that the lines of each ∆t converge as expected(Figure 8). The lines converge towards 12, and the line with the less ∆t seems to be more parabolic to this value.  
+It can be seen that the lines of each ∆t converge as expected(Figure 9). The lines converge towards 12, and the line with the less ∆t seems to be more parabolic to this value.  
 
 ![10](/images/10.png)  
 
@@ -108,13 +108,13 @@ As mentioned before, derivative cannot be calculated for the left end point in t
 
 ![11](/images/11.png)  
 
-these values are obtained(Figure 10).
+these values are obtained(Figure 11).
 
 If the data group to be calculated with 50 ms ∆t value is calculated by Backward-difference method  
 
 ![12](/images/12.png)  
 
-these values are obtained(Figure 11).
+these values are obtained(Figure 12).
 
 Values were calculated for 25 and 10 ms, but they were not added to avoid extending the report unnecessarily.
 
@@ -126,9 +126,9 @@ If the time-current derivative graph calculated for each ∆t value is drawn,
 
 ![13](/images/13.png)  
 
-it can be seen that the expected output is received(Figure 12).
+it can be seen that the expected output is received(Figure 13).
 
-When looking at the points where convergences end, it can be seen that the curve with the lower ∆t value converges better(Figure 13).  
+When looking at the points where convergences end, it can be seen that the curve with the lower ∆t value converges better(Figure 14).  
 
 ![14](/images/14.png)  
 
@@ -169,13 +169,13 @@ If the data group to be calculated with 75 ms ∆t value is calculated,
 
 ![18](/images/19.png)  
 
-these values are obtained(Figure 18).
+these values are obtained(Figure 19).
 
 If the data group to be calculated with 50 ms ∆t value is calculated,  
 
 ![19](/images/20.png)  
 
-these values are obtained(Figure 19).
+these values are obtained(Figure 20).
 
 Values were calculated for 25 and 10 ms, but they were not added to avoid extending the report unnecessarily.
 
@@ -185,7 +185,7 @@ To see the difference better, the values obtained for all ∆t values can be plo
 
 If the time-current derivative graph is drawn according to each dt value, figure 20 will be obtained. As mentioned in the previous pages of the report, it is seen that the line follows a more parabolic path with the decrease in the ∆t value.
 
-When looking at the points where convergences end, it can be seen that the curve with the lower ∆t value converges better(Figure 21).  
+When looking at the points where convergences end, it can be seen that the curve with the lower ∆t value converges better(Figure 22).  
 
 ![21](/images/22.png)  
 
@@ -193,13 +193,13 @@ If the derivative data used with 75 ms ∆t value is replaced in the formula to 
 
 ![22](/images/23.png)  
 
-these values are obtained(Figure 22).
+these values are obtained(Figure 23).
 
 If the derivative data used with 50 ms ∆t value is replaced in the formula to find the ε(t) value  
 
 ![23](/images/24.png)  
 
-these values are obtained(Figure 23).
+these values are obtained(Figure 24).
 
 Values were calculated for 25 and 10 ms, but they were not added to avoid extending the report unnecessarily.
 
@@ -225,21 +225,21 @@ If the data group to be calculated with 75 ms ∆t value is calculated,
 
 ![26](/images/27.png)  
 
-these values are obtained(Figure 26).
+these values are obtained(Figure 27).
 
 If the data group to be calculated with 50 ms ∆t value is calculated,  
 
 ![27](/images/28.png)  
 
-these values are obtained(Figure 27).
+these values are obtained(Figure 28).
 
 Values were calculated for 25 and 10 ms, but they were not added to avoid extending the report unnecessarily.
 
-To see the difference better, the values obtained for all ∆t values can be plotted on a graph(Figure 28).  
+To see the difference better, the values obtained for all ∆t values can be plotted on a graph(Figure 29).  
 
 ![28](/images/29.png)  
 
-When looking at the points where convergences end, it can be seen that the curve with the lower ∆t value converges better(Figure 29).  
+When looking at the points where convergences end, it can be seen that the curve with the lower ∆t value converges better(Figure 30).  
 
 ![29](/images/30.png)  
 
@@ -247,13 +247,13 @@ If the derivative data used with 75 ms ∆t value is replaced in the formula to 
 
 ![30](/images/31.png)  
 
-these values are obtained(Figure 30).
+these values are obtained(Figure 31).
 
 If the derivative data used with 50 ms ∆t value is replaced in the formula to find the ε(t) value  
 
 ![31](/images/32.png)  
 
-these values are obtained(Figure 31).
+these values are obtained(Figure 32).
 
 Values were calculated for 25 and 10 ms, but they were not added to avoid extending the report unnecessarily.
 
